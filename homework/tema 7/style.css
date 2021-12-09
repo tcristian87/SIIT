@@ -1,0 +1,104 @@
+body {
+    background-color: #fefbd8;
+
+}
+h2 {
+    text-align: center;
+}
+#crew-form {
+  text-align: center;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.507);
+} 
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    
+} 
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0 10px;
+    color:black;
+    background-color: #fefbd8;
+    -webkit-transition: top 0.2s ease-in-out, 
+                        font-size .2s ease-in-out;
+    transition: top 0.2s ease-in-out, 
+                font-size 0.2s ease-in-out;
+  }
+  
+  .active {
+    top: -20px;
+    font-size: 20px;
+  }
+  
+  input[type=text] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: #fefbd8;
+    color: black;
+  } 
+  
+  input[type=text]:focus {
+    outline: none;
+  }
+  div.wrap div {
+    position: relative;
+    margin: 20px 0;
+  }
+  .wrap {
+      color: white;
+      margin: auto;
+      width: 30%;
+      padding: 10px;
+  }
+  #addC {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-left: 300px;
+  }
+  button {
+    color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #60a3bc;
+	padding: 20px;
+	border-radius: 50px;
+	border: none;
+    
+}
+button:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	transition: all 0.4s ease 0s;
+}
+
+
+  

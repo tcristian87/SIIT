@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border: 1px solid black;
+        display: auto;
+      }
+      img {
+        height: 70px;
+        width: 50px;
+        border-radius: 10%;
+      }
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="add-crew">Add crew member</button>
+    <table id="crew-list">
+      <thead>
+        <td>ID</td>
+        <td>Character name</td>
+        <td>Actor/Actress name</td>
+        <td>Image</td>
+        <td>Year Of Birth</td>
+        <td>Action</td>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <form action="" id="form" style="display: none">
+      <p>
+        <label for="id">Id</label>
+        <input type="number" name="id" id="id" />
+      </p>
+      <p>
+        <label for="charcter-name">Actor Name</label>
+        <input type="text" name="actorName" id="actorName" />
+      </p>
+      <p>
+        <label for="actor-name">Character Name</label>
+        <input type="text" name="characterName" id="characterName" />
+      </p>
+      <p>
+        <label for="picture">Picture</label>
+        <input type="img" name="pictureURL" id="pictureURL" class = "img">
+      </p>
+      <p>
+        <label for="yearOfBirth">Year Of Birth</label>
+        <input type="text" name="yearOfBirth" id="yearOfBirth" />
+      </p>
+
+      <button type="text" id="save">Save Actors</button>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="application.js"></script>
+  </body>
+</html>

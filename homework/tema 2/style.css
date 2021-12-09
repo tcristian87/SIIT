@@ -1,0 +1,72 @@
+body {
+   display: grid;
+}
+
+p {
+    color: grey;
+    font-family: "Poppins", sans-serif;
+}
+
+.checked {
+    color: orange;
+  }
+
+.number-of-stars {
+      color: grey;
+  }
+.fa.fa-star {
+    margin-right: 10px;
+
+}
+.fa-heart {
+      color: grey;
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+
+.number-of-hearts {
+      color:grey;
+  }
+
+.cart {
+    width: 100px; height: 40px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    border: 2px solid black;
+    font-family: "Poppins", sans-serif; 
+    cursor: pointer;
+}
+
+.view {
+    width: 100px; height: 40px;
+    background-color: white;
+    font-size: 15px;
+    color: black;
+    border: 2px solid black;
+    font-family: "Poppins", sans-serif; 
+    cursor: pointer;
+}
+
+.center {
+    width: auto;   
+    height: auto; 
+    margin: 0 auto;
+}
+
+.col {
+    text-align: center;
+    width: auto;
+    height: 500px;
+    float: left;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+#red-heart {
+    color: red;
+}
+
+.text {
+    border: 1px;
+}

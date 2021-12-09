@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="items">
+        <head>Products added to the cart</head><br>
+            <input type="checkbox" id="item1" value="">Item1<br>
+            <input type="checkbox" id="item2" value="">Item2<br>
+            <input type="checkbox" id="item3" value="">Item3<br>
+        <button class="buy"><b>Buy!</b></button>
+        <button class="back"onclick="document.location='index.html'"><b>Back</b></button>
+</div>
+<style> 
+    body {
+            background-image: url('cart.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover; 
+            font-family: "Poppins", sans-serif;
+            color: grey;
+        }
+    .buy {
+            width: 100px; height: 40px;
+            background-color: black;
+            font-size: 15px;
+            color: white;
+            border: 2px solid black;
+            font-family: "Poppins", sans-serif;
+        }
+    .back {
+            width: 100px; height: 40px;
+            background-color: white;
+            font-size: 15px;
+            color: black;
+            border: 2px solid black;
+            font-family: "Poppins", sans-serif;
+        }
+    .items {
+            float: center;
+            width: auto;
+            padding-top: 200px;
+            padding-left: 350px;
+        }
+    </style>
+</body>
+</html>
