@@ -12,31 +12,39 @@ function setQuery(evt) {
 }
 
 function getResults(query) {
-  fetch(`${api.base}weather?q=${query}&units=metric&onecall?lat=${location.latitude}&lon=${location.longitude}&appid=${api.key}`)
+  fetch(`${api.base}forecast?q=${query}&units=metric&onecall?lat=${location.latitude}&lon=${location.longitude}&appid=${api.key}`)
     .then((weather) => {
       return weather.json();
     })
     .then(displayResults);
 }
 
-function displayResults(weather) {
 
+ function displayResults (weather) {
+  console.log(weather)
   let city = document.querySelector(".location .city");
-  city.innerText = `${weather.name}, ${weather.sys.country}`;
+  city.innerText = `${weather.city.name}`;
 
   let now = new Date();
   let date = document.querySelector(".location .date");
   date.innerText = dateBuilder(now);
 
   let temp = document.querySelector(".current .temp")
-  temp.innerHTML = `${Math.round(weather.main.temp)}<span>\xB0C</span> <br> ${Math.round((weather.main.temp)* 9/5+32)}<span>\xB0F</span>`
+  temp.innerHTML = `${Math.round(weather.list[0].main.temp)}<span>\xB0C</span> <br> ${Math.round((weather.list[0].main.temp)* 9/5+32)}<span>\xB0F</span>`
   
   let weather_el = document.querySelector('.current .weather');
-  weather_el.innerText = weather.weather[0].main;
+  weather_el.innerText = "Weather in " + weather.city.name + " " + weather.list[0].weather[0].main;
 
   let hilow = document.querySelector('.hi-low');
-  hilow.innerHTML = `${Math.round(weather.main.temp_min)}\xB0C/ ${Math.round(weather.main.temp_max)}\xB0C <br> ${Math.round((weather.main.temp_min)* 9/5+32)}\xB0F/${Math.round((weather.main.temp_max)* 9/5+32)}<span>\xB0F</span>`; 
+  hilow.innerHTML = `<p>Whit min& max<p>${Math.round(weather.list[0].main.temp_min)}\xB0C/ ${Math.round(weather.list[0].main.temp_max)}\xB0C <br> ${Math.round((weather.list[0].main.temp_min)* 9/5+32)}\xB0F/${Math.round((weather.list[0].main.temp_max)* 9/5+32)}<span>\xB0F</span>`; 
 
+  document.getElementById('.day1 .day2 .day3 .day4 .day5');
+
+  day1.innerHTML = `<p>day1<p> ${weather.list[6].main.temp_min}\xB0C / ${weather.list[6].main.temp_max}\xB0C` ;
+  day2.innerHTML = `<p>day2<p> ${weather.list[7].main.temp_min}\xB0C / ${weather.list[7].main.temp_max}\xB0C` ;
+  day3.innerHTML = `<p>day3<p> ${weather.list[8].main.temp_min}\xB0C / ${weather.list[8].main.temp_max}\xB0C` ;
+  day4.innerHTML = `<p>day4<p> ${weather.list[9].main.temp_min}\xB0C / ${weather.list[9].main.temp_max}\xB0C` ;
+  day5.innerHTML = `<p>day5<p> ${weather.list[10].main.temp_min}\xB0C / ${weather.list[10].main.temp_max}\xB0C` ;
 }
 
 function dateBuilder(d) {
@@ -50,16 +58,19 @@ function dateBuilder(d) {
     "Saturday",
   ];
 
-  let day = days[d.getDay()];
-  let date = "0" + d.getDate();
+  let day = days[d.getDay()] 
+  let date = d.getDate() 
+    if (date < 10) 
+      date = "0"+d.getDate()
   let month = d.getMonth()+1;
-  let year = d.getFullYear();
+  let year = d.getFullYear(); 
 
   return `${day} ${date}.${month}.${year}`
 }
 
+// getGeolocation
 
-var x = document.getElementById("glocation");
+// var x = document.getElementById("glocation");
 
 window.onload = function getLocation() {
     if(navigator.geolocation) {
@@ -72,13 +83,6 @@ window.onload = function getLocation() {
 function showPosition(position) {
     var lat = position.coords.latitude;
      var lon = position.coords.longitude;
-        (location)=>{
-            return location.json();
-        }
-        // .then(displayLocation);
- x.innerHTML = "Latitude : " + lat + "<br> Longitude :" + lon;
+ x = "Latitude : " + lat + " Longitude :" + lon;
+console.log(x)
 }
-
-//  function displayLocation(location){
-//  fetch(`$)`)
-//  }
