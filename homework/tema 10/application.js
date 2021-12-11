@@ -11,8 +11,10 @@ function setQuery(evt) {
   } 
 }
 
-function getResults(query) {
-  fetch(`${api.base}forecast?q=${query}&units=metric&onecall?lat=${location.latitude}&lon=${location.longitude}&appid=${api.key}`)
+function getResults(query="", lat="", long="") {
+  let urlQuery = query? `${api.base}forecast?q=${query}&units=metric&appid=${api.key}`: 
+  `${api.base}forecast?units=metric&lat=${lat}&lon=${long}&appid=${api.key}`
+  fetch(urlQuery)
     .then((weather) => {
       return weather.json();
     })
@@ -38,7 +40,7 @@ function getResults(query) {
   let hilow = document.querySelector('.hi-low');
   hilow.innerHTML = `<p>Whit min& max<p>${Math.round(weather.list[0].main.temp_min)}\xB0C/ ${Math.round(weather.list[0].main.temp_max)}\xB0C <br> ${Math.round((weather.list[0].main.temp_min)* 9/5+32)}\xB0F/${Math.round((weather.list[0].main.temp_max)* 9/5+32)}<span>\xB0F</span>`; 
 
-  document.getElementById('.day1 .day2 .day3 .day4 .day5');
+
   day1.innerHTML = `<p>day1<p> ${weather.list[6].main.temp_min}\xB0C / ${weather.list[6].main.temp_max}\xB0C` ;
   day2.innerHTML = `<p>day2<p> ${weather.list[7].main.temp_min}\xB0C / ${weather.list[7].main.temp_max}\xB0C` ;
   day3.innerHTML = `<p>day3<p> ${weather.list[8].main.temp_min}\xB0C / ${weather.list[8].main.temp_max}\xB0C` ;
@@ -82,6 +84,7 @@ window.onload = function getLocation() {
 function showPosition(position) {
     var lat = position.coords.latitude;
      var lon = position.coords.longitude;
- x = "Latitude : " + lat + " Longitude :" + lon;
+ x = "Latitude: " + lat + " Longitude: " + lon;
 console.log(x)
+getResults("",lat,lon)
 }
