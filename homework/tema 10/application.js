@@ -84,7 +84,5 @@ window.onload = function getLocation() {
 function showPosition(position) {
     var lat = position.coords.latitude;
      var lon = position.coords.longitude;
- x = "Latitude: " + lat + " Longitude: " + lon;
-console.log(x)
 getResults("",lat,lon)
 }
