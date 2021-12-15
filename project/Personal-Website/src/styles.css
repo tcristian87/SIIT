@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%; 
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url(wallpaper-kid_com.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: 30% 100%;
+}

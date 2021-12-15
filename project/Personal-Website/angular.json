@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "personal-web-site": {
+    "Personal-Website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/personal-web-site",
+            "outputPath": "dist/personal-website",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -68,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "personal-web-site:build:production"
+              "browserTarget": "Personal-Website:build:production"
             },
             "development": {
-              "browserTarget": "personal-web-site:build:development"
+              "browserTarget": "Personal-Website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "personal-web-site:build"
+            "browserTarget": "Personal-Website:build"
           }
         },
         "test": {
@@ -102,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "personal-web-site"
+  "defaultProject": "Personal-Website"
 }
