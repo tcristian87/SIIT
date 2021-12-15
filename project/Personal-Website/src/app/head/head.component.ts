@@ -12,7 +12,7 @@ import { ContentComponent } from '../content/content.component';
 export class HeadComponent implements OnInit {
 
   onNavigate(){
-    window.open("https://github.com/tcristian87/SIIT/tree/main/project/personal-web-site", "_blank");
+    window.open("https://github.com/tcristian87/SIIT/tree/main/project/Personal-Website", "_blank");
   }
 //   scrollToResume(){
 //     console.log("this is working")
