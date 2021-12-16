@@ -1,6 +1,4 @@
-import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
 import { ContentComponent } from '../content/content.component';
 
 
@@ -11,17 +9,23 @@ import { ContentComponent } from '../content/content.component';
 })
 export class HeadComponent implements OnInit {
 
+// @Input() content: ContentComponent
+
   onNavigate(){
     window.open("https://github.com/tcristian87/SIIT/tree/main/project/Personal-Website", "_blank");
   }
-//   scrollToResume(){
-//     console.log("this is working")
-//     let element = document.getElementsByClassName(".resume")
-// }
- 
+
+
+  scrollTo(el: HTMLElement) {
+    el.scrollIntoView()
+    }
+
+  
+
   constructor() {  
   }
 
   ngOnInit(): void {
   }
 }
+

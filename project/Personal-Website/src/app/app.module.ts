@@ -14,6 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HeadComponent } from './head/head.component';
 import { ContentComponent } from './content/content.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,4 +36,6 @@ import { ContentComponent } from './content/content.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }

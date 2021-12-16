@@ -2,7 +2,6 @@
     <mat-card-title>Toma Cristian</mat-card-title>
     <mat-card-subtitle>Web Designer</mat-card-subtitle>
     <mat-card-content>
-      <p></p>
       <p>{{longText}}</p>
     </mat-card-content>
     <mat-card-actions>
@@ -10,7 +9,7 @@
     </mat-card-actions>
   </mat-card>
   <br>
-  <mat-card class="card-content">
+  <mat-card class="card-content" id="about">
     <mat-card-title>About</mat-card-title>
     <mat-card-subtitle>Web Designer</mat-card-subtitle>
     <mat-card-content>
@@ -24,7 +23,7 @@
   </mat-card>
   <br>
   <mat-card class="card-content">
-    <mat-card-title>FACEBOOK</mat-card-title>
+    <mat-card-title #target class="resume" id="resume" >Resume</mat-card-title>
     <mat-card-subtitle>Web Designer</mat-card-subtitle>
     <mat-card-content>
       <p></p>
@@ -37,7 +36,7 @@
   </mat-card>
   <br>
   <mat-card class="card-content">
-    <mat-card-title class="resume">Resume</mat-card-title>
+    <mat-card-title #target class="resume" id="contact" >Contact</mat-card-title>
     <mat-card-subtitle>Web Designer</mat-card-subtitle>
     <mat-card-content>
       <p></p>
@@ -48,4 +47,3 @@
       <button mat-button>SHARE</button>
     </mat-card-actions>
   </mat-card>
-  <div #target>Your target</div>
