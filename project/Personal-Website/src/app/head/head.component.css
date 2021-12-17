@@ -1,38 +1,27 @@
- .head {
+ .nav {
+  position: fixed;
+  top:0%;
+  margin: 0%;
   width: 100%;
-  position: fixed;
-  padding-top: 40px;
-  z-index: 9;
+  text-align: right;
 }
-.text-wrapp {
-  top: 0px;
-  width: 70%;
-  right: 0;
-  height: 100px;
-  position: fixed;
-  background-color: white;
-  z-index: 9;
-}
+
 a:link {
   text-decoration: none;
 }
-
 .nav {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-  text-align: right;
   font-size: 20px;
-  border-radius: 30px;
-  padding-right: 40px;
-  margin-top: 5px;
   background-color: white;
+  position: fixed;
 }
 .nav li {
   list-style-type: none;
-  display: inline-block;
+  display: inline;
   padding: 20px;
   border-style: none;
 } 
-.test {
-  position: absolute;
-  bottom: 0;
+#head-name{
+  font-family: 'Popins';
+  font-weight: 900;
+  font-size: 25px;
 }

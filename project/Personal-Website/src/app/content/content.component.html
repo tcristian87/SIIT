@@ -1,49 +1,48 @@
-<mat-card class="card-content">
-    <mat-card-title>Toma Cristian</mat-card-title>
-    <mat-card-subtitle>Web Designer</mat-card-subtitle>
-    <mat-card-content>
-      <p>{{longText}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Contact Me</button>
-    </mat-card-actions>
-  </mat-card>
-  <br>
-  <mat-card class="card-content" id="about">
-    <mat-card-title>About</mat-card-title>
-    <mat-card-subtitle>Web Designer</mat-card-subtitle>
-    <mat-card-content>
-      <p></p>
-      <p>{{longText}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
-  <br>
-  <mat-card class="card-content">
-    <mat-card-title #target class="resume" id="resume" >Resume</mat-card-title>
-    <mat-card-subtitle>Web Designer</mat-card-subtitle>
-    <mat-card-content>
-      <p></p>
-      <p>{{longText}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
-  <br>
-  <mat-card class="card-content">
-    <mat-card-title #target class="resume" id="contact" >Contact</mat-card-title>
-    <mat-card-subtitle>Web Designer</mat-card-subtitle>
-    <mat-card-content>
-      <p></p>
-      <p>{{longText}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
+<div class="cards-content">
+  <div @fade class="about-card-content vertical-center">
+      <span><h1>About</h1></span>
+        <div class="text-content">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            nemo ipsam commodi voluptates laudantium amet architecto recusandae
+            ullam, itaque obcaecati, quas sed ratione, assumenda eius. Est nisi
+            vero amet animi!
+          </p>           
+          <div class="button-class">
+      <button class="about-button">More About Me</button>
+    </div>
+        <div class="text-img">
+          <img src="assets/poza.jpg" alt="" />
+        </div>
+          </div>
+    </div>
+  <div class="resume-card-content vertical-center">
+    <div @fade>
+      <span><h1>Resume</h1></span>
+      <span
+        ><p class="text-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo
+          ipsam commodi voluptates laudantium amet architecto recusandae ullam,
+          itaque obcaecati, quas sed ratione, assumenda eius. Est nisi vero amet
+          animi!
+        </p></span
+      >
+    </div>
+  </div>
+  <div class="contact-card-content vertical-center">
+    <div @fade>
+      <span><h1>Contact</h1></span>
+      <span
+        ><p class="text-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo
+          ipsam commodi voluptates laudantium amet architecto recusandae ullam,
+          itaque obcaecati, quas sed ratione, assumenda eius. Est nisi vero amet
+          animi!
+        </p></span
+      >
+      <div class="button-class">
+        <button class="contact-button">Contact Me</button>
+      </div>
+    </div>
+  </div>
+</div>

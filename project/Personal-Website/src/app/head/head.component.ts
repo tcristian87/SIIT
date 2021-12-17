@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ContentComponent } from '../content/content.component';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,23 +8,17 @@ import { ContentComponent } from '../content/content.component';
 })
 export class HeadComponent implements OnInit {
 
-// @Input() content: ContentComponent
 
   onNavigate(){
     window.open("https://github.com/tcristian87/SIIT/tree/main/project/Personal-Website", "_blank");
   }
 
-
-  scrollTo(el: HTMLElement) {
-    el.scrollIntoView()
-    }
-
-  
-
+ scrollTo(el: HTMLElement) {
+       el.scrollIntoView();
+ }
   constructor() {  
   }
 
   ngOnInit(): void {
   }
-}
-
+} 
