@@ -11,8 +11,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { HeadComponent } from './head/head.component';
-import { ContentComponent } from './content/content.component';
+import { HeadComponent } from './home/head.component';
+import { ContentComponent } from './about/content.component';
+import { ContactComponent } from './contact/contact.component';
+import { ResumeComponent } from './resume/resume.component';
+import { WeatherComponent } from './weather/weather.component';
 
 
 @NgModule({
@@ -20,6 +23,9 @@ import { ContentComponent } from './content/content.component';
     AppComponent,
     HeadComponent,
     ContentComponent,
+    ContactComponent,
+    ResumeComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
