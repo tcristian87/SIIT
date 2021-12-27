@@ -1,10 +1,9 @@
 a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none;  
 }
 
 a:hover, a:active{
-    color: lightgray;
+    color: gray;
 }
 
 .navigation-items{
@@ -16,6 +15,8 @@ a:hover, a:active{
 mat-toolbar{
     border-radius: 3px;
     position: fixed;
+    z-index: 0;
+    background-color: transparent;
 }
 
 @media(max-width: 959px){
