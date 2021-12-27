@@ -1,0 +1,17 @@
+/* .title {
+    color: #262728;
+    font-size: 54px;
+} */
+#resume-title {
+    color: #262728;
+    font-size: 54px;
+}
+#arrow {
+    display: none;
+}
+.mat-tab-labels {
+    display: none;
+}
+.resume-content {
+    height: 80vh;
+}

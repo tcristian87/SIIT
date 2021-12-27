@@ -1,0 +1,17 @@
+.weather-content{
+  height: 90vh;
+  background-image: url("1947484.jpg");
+  color: whitesmoke;
+  width: 99vw;
+}
+.weather-title {
+  font-size: 54px;
+}
+.box-container {
+ 
+  width: 30%;
+  font-size: 25px;
+}
+.weather-align {
+  margin-left:200px;
+}

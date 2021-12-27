@@ -1,0 +1,31 @@
+<div class="weather-content" id='home'>
+  <div class="weather-align"> 
+  <h1 class="weather-title">Today`s weather</h1>
+  <div class="home-weather-city">
+    {{ weather.name }}
+  </div>
+  <div class="dashboard-card-content">
+    <div class="weather-icon">
+      <img
+        src="http://openweathermap.org/img/wn/{{
+          weather.weather[0].icon
+        }}@2x.png"
+      />
+    </div>
+    <div class="temp">{{ weather.main.temp }}&#176;C</div>
+    <div class="weather">
+      {{ weather.weather[0].description | titlecase }}
+    </div>
+    <div class="date">{{ today }}</div>
+  </div>
+<div>
+  <h1 class="weather-title">Toma CRISTIAN</h1>
+  <p class="box-container">
+    Hello! I am a Junior Web Developer from Romania, Targu Mures. I have
+        finished a Front End Web Developer cours, at Scoala Infromala de IT,
+        and now I`m practicing my skills in HTML, CSS, JAVASCRIPT, EXPRESS
+        JS, ANGULAR
+  </p>
+</div>
+</div>
+</div>

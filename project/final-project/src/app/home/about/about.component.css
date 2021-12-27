@@ -1,0 +1,18 @@
+.title {
+    color: #fff;
+    font-size: 54px;
+    margin-top: 0px;
+}
+.about-content {
+    height: 90vh;
+    background-image: url("do something great.jpg");
+    color: white;
+}
+
+.about-align-content {
+    margin-left: 200px;
+}
+.about-text-content{
+    font-size: 24px;
+    width: 30%;
+}

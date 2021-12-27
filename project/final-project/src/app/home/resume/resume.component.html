@@ -1,0 +1,28 @@
+<div class="resume-content" id="resume">
+  <div>
+    <h1 class="title">Resume</h1>
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam vitae
+      amet velit. Nemo, iusto commodi debitis rerum perspiciatis, nulla dolorem
+      esse unde laborum hic sed! Quae placeat facilis magnam!
+    </p> -->
+  </div>
+  <button mat-raised-button tabindex="-1" type="button" 
+     color="warn" (click)='moveToSelectedTab("arrow")'>Move to Tab 1</button>
+     <button mat-raised-button tabindex="-1" type="button" 
+    color="warn" (click)='moveToSelectedTab("arrow2")'>Move to Tab 2</button>
+  <div>
+    <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+    <mat-tab label="arrow" id="arrow">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam vitae
+    amet velit. Nemo, iusto commodi debitis rerum perspiciatis, nulla dolorem
+    esse unde laborum hic sed! Quae placeat facilis magnam!</p> 
+</mat-tab>
+<mat-tab label="arrow2" id="arrow2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam vitae
+      amet velit. Nemo, iusto commodi debitis rerum perspiciatis, nulla dolorem
+      esse unde laborum hic sed! Quae placeat facilis magnam!</p> 
+  </mat-tab>
+</mat-tab-group>
+  </div>
+</div>

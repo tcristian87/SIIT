@@ -15,5 +15,16 @@ export class SidenavListComponent implements OnInit {
   public onSidenavClose = () => {
     this.sidenavClose.emit();
   }
-
+  toHome(){
+    document.getElementById("home")?.scrollIntoView({behavior: "smooth", block: "end"});
+  }
+  toAbout(){
+    document.getElementById("about")?.scrollIntoView({behavior: "smooth", block: "center"});
+  }
+  toResume() {
+    document.getElementById("resume")?.scrollIntoView({behavior: "smooth", block: "center"});
+  }
+  toContact() {
+    document.getElementById("contact")?.scrollIntoView({behavior: "smooth", block: "center"});
+  }
 }

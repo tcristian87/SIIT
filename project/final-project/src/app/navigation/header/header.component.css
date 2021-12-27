@@ -15,10 +15,14 @@ a:hover, a:active{
 
 mat-toolbar{
     border-radius: 3px;
+    position: fixed;
 }
 
 @media(max-width: 959px){
     mat-toolbar{
         border-radius: 0px;
     }
+}
+ul li{
+    right: 30px;
 }
