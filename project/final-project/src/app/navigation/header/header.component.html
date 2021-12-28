@@ -5,25 +5,22 @@
       <mat-icon>menu</mat-icon>
     </button>
   </div>
-  <div>
-    <a routerLink="/home">TOMA CRISTIAN</a>
-  </div>
   <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
     <ul fxLayout fxLayoutGap="15px" class="navigation-items">
       <li>
-        <a routerLink="/home" (click)="toHome()"><mat-icon>home</mat-icon></a>
+        <a mat-raised-button routerLink="/home" (click)="toHome()"><mat-icon>home</mat-icon></a>
       </li>
       <li>
-        <a routerLink="/about" (click)="toAbout()">About</a>
+        <a mat-raised-button routerLink="/about" (click)="toAbout()">About</a>
       </li>
       <li>
-        <a routerLink="/resume" (click)="toResume()">Resume</a>
+        <a mat-raised-button routerLink="/resume" (click)="toResume()">Resume</a>
       </li>
       <li>
-        <a routerLink="/contact" (click)="toContact()">Contact</a>
+        <a mat-raised-button routerLink="/contact" (click)="toContact()">Contact</a>
       </li>
       <li>
-        <a href="https://github.com/tcristian87" target="_blank">GitHub</a>
+        <a mat-raised-button href="https://github.com/tcristian87" target="_blank">GitHub</a>
       </li>
     </ul>
   </div>

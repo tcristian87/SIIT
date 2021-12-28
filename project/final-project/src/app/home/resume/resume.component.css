@@ -6,14 +6,13 @@
     color: #262728;
     font-size: 54px;
 }
-#arrow {
-    display: none;
-}
-.mat-tab-labels {
-    display: none;
+
+.title {
+  font-size: 54px;
 }
 .resume-content {
     height: 80vh;
+    margin-left: 200px;
 }
 .app-container {
     border: 1px solid black;
@@ -44,3 +43,19 @@
   .app-container .btn-container {
     display: flex;
   }
+  .resume-content2 {
+    display: flex;
+    justify-content:center;
+  }
+  .resume-right-side {
+    width: 70%;
+    border: solid 1px
+  }
+  .resume-left-side {
+    width: 30%;
+    border: solid 1px
+  }
+  .radio-input td{
+    padding: 10px;
+  }
+  

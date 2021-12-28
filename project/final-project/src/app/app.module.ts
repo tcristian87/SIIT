@@ -16,6 +16,9 @@ import { WeatherComponent } from './home/weather/weather.component';
 import { AboutComponent } from './home/about/about.component';
 import { ResumeComponent } from './home/resume/resume.component';
 import { ContactComponent } from './home/contact/contact.component';
+import { FooterComponent } from './navigation/footer/footer.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +30,8 @@ import { ContactComponent } from './home/contact/contact.component';
     WeatherComponent,
     AboutComponent,
     ResumeComponent,
-    ContactComponent
-    
+    ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,7 @@ import { ContactComponent } from './home/contact/contact.component';
     FlexLayoutModule,
     RoutingModule,
     HttpClientModule,
-
+    MatProgressBarModule
 
   ],
   providers: [],

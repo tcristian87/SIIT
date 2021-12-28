@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
 import { WeatherService } from '../../weather.service';
 
+
 @Component({
   selector: 'app-weather',
   templateUrl: './weather.component.html',
@@ -11,15 +12,18 @@ export class WeatherComponent implements OnInit {
   lat: number |undefined;
   lon: number | undefined;
   weather: any;
+  
 
-  constructor(private weatherService: WeatherService) {}
+  
+  constructor(private weatherService: WeatherService) {
+  }
 
   today:string = moment().format('DD/MM/YYYY');
 
 
   ngOnInit(): void {
     this.getLocation()
-  }
+     }
 
     getLocation(){
       if("geolocation" in navigator) {
@@ -35,5 +39,6 @@ export class WeatherComponent implements OnInit {
     }
    
   }
- 
+
+
 }
