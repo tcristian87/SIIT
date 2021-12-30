@@ -1,30 +1,22 @@
-<div class="weather-content home-page-background" id='home'>
-  <div class="weather-align"> 
-  <h1 class="weather-title">Today`s weather</h1>
-  <div class="home-weather-city">
+<div class="home-weather-content"id='home'> 
+  <div class="weather-content">
     {{ weather.name }}
-  </div>
-  <div class="dashboard-card-content">
-    <div class="weather-icon">
       <img
         src="http://openweathermap.org/img/wn/{{
           weather.weather[0].icon
         }}@2x.png"
       />
-    </div>
-    <div class="temp">{{ weather.main.temp }}&#176;C</div>
-    <div class="weather">
+    <div>{{ weather.main.temp }}&#176;C</div>
+    <div>
       {{ weather.weather[0].description | titlecase }}
     </div>
-    <div class="date">{{ today }}
-
-    </div>
+    <div>{{ today }}</div>
   </div>
+  <div class="home-content">
+  <h1 >Toma Cristian </h1>
+  <h2>
+    Welcome To My Website
+  </h2>
 </div>
-<div class="weather-container2">
-  <h1 class="weather-title2 beside">Toma Cristian</h1>
-  <p class="box-container">
-    Welcome to my website
-  </p>
 </div>
-</div>
+

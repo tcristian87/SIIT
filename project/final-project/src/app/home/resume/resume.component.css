@@ -1,67 +1,41 @@
-/* .title {
-    color: #262728;
-    font-size: 54px;
-} */
-#resume-title {
-    color: #262728;
-    font-size: 54px;
-}
-
 .title {
   font-size: 54px;
 }
+.experience-content {
+  height: 100vh;
+}
+
 .resume-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 80vh;
   margin-left: 200px;
   width: 60vw;
-
 }
-.app-container {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background: #222;
-  }
-  .app-container .controls {
-    height: 20vh;
-    width: 100%;
-    color: #3cd0a9;
-    font-size: 15pt;
-    text-align: center;
-  }
-  .app-container .controls button {
-    width: 100px;
-    height: 30px;
-    border-radius: 7px;
-    margin: 10px 0 0 10px;
-    font-size: 15px;
-    background: #ce7c7f;
-  }
-  .app-container .controls button:focus {
-    outline: none;
-  }
-  .app-container .btn-container {
-    display: flex;
-  }
   .resume-content2 {
     display: flex;
     justify-content:center;
+    height: 100%;
+ 
   }
+      
   .resume-right-side {
     width: 70%;
     border: solid 1px
   }
   .resume-left-side {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     border: solid 1px;
     background-color: #1A5389;
+    color: white;
+  }
+
+  h3{
+    color: #396EB0;
   }
 
   .radio-input td{
@@ -71,6 +45,20 @@
     border-radius:50%;
   }
   .image {
-  padding-bottom: 100px;
-
+    padding-top: 50px;
+}
+img {
+  display:flex;
+  border-radius: 50%;
+}
+.resume-right-side {
+  display: flex; 
+  justify-content:flex-start;
+  flex-direction: column;
+}
+div.resume-right-side {
+  padding: 10%;
+}
+.box {
+  margin-bottom: 50px;
 }

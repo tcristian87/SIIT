@@ -1,28 +1,23 @@
-.weather-content {
-  font-family: "Raleway", sans-serif;
-  height: 90vh;
-  background-image: url("pexels-photo-316902.jpeg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 100%;
-  width: 99vw;
+.home-weather-content{
+  height: 100vh;
   color: white;
-  border: solid 1px white;
-  margin: 0%;
-  padding: 0%;
+  display:flex;
+  flex-direction: column;
+  justify-content: top;
 }
-.weather-title2 {
-  font-size: 54px;
+.home-weather-content{
+  background-image: url("1947484.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.weather-container2 {
+.home-content {
   margin-left: 200px;
+  margin-right: auto;
 }
-.box-container {
-  width: 30%;
-  font-size: 25px;
+.weather-content {
+  padding-top: 5%;
+margin-left: auto ; 
 }
-.weather-align {
-  display: flex;
-  justify-content: right;
-  margin-top: 3em;
+h1{
+  font-size: 54px;
 }
