@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+  } 
+.headtext {
+    margin: 100px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+  #computer {
+    height: 100px;
+    width: 200px;
+  }
+#cpScore {
+    margin-right: 20px;
+}
+#ussc {
+  margin-left: 20px;
+}
+#userScore {
+    margin-left: 10px;
+}
+.scores {
+    display: flex;
+    justify-content: center;
+}
+  
+  #roundWin {
+    height:100px;
+    width: 200px;
+  
+  }
+  #user {
+    height:100px;
+    width: 200px;
+  
+  }
+  #roundWin {
+    height:100px;
+    width: 200px;
+  
+  }
+  
+  #rock {
+    height: 200px;
+    width: 200px;
+
+  }
+
+  #paper {
+    height: 200px;
+    width: 200px;
+  
+  }
+  #scrissors {
+    height: 200px;
+    width: 200px;
+  
+  }

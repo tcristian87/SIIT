@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <img
+        id="rock"
+        class="img"
+        src="rock.jpg"
+        onclick="userSelectRock(); addBorder(this)"
+      />
+      <img
+        id="paper"
+        class="img"
+        src="paper.jpg"
+        onclick="userSelectPaper(); addBorder(this)"
+      />
+      <img
+        id="scrissors"
+        class="img"
+        src="scrissors.jpg"
+        onclick="userSelectScrissors(); addBorder(this)"
+      />
+    </div>
+    <div class="headtext">
+      <p>This is the “Rock, paper, scissors” game</p>
+      <p>Select a wappon and Click start to begin</p>
+      <button id="button" onclick="Play()">Start</button>
+    </div>
+
+    <div class="content">
+      <div id="computer">
+        <h2>Computer selected</h2>
+        <p id="result"></p>
+      </div>
+      <div id="user">
+        <h2>User selected</h2>
+        <p id="userOption"></p>
+      </div>
+      <div id="round">
+        <h2>Winner of the round is:</h2>
+        <p id="roundWin"></p>
+      </div>
+    </div>
+    <h2>Score</h2>
+    <div class="content">
+      <div id="cpScore">
+        <h4>Computer Score</h4>
+        <p id="computerScore">0</p>
+      </div>
+      <div id="ussc">
+        <h4>User Score</h4>
+        <p id="userScore">0</p>
+      </div>
+    </div>
+
+    <script>
+      var computerOption = ["Rock", "Paper", "Scrissors"];
+      var rock = "Rock";
+      var paper = "Paper";
+      var scrissors = "Scrissors";
+      var userOption;
+      var computerWins = 0;
+      var userWins = 0;
+
+      function addBorder(id) {
+        var x = document.getElementsByClassName("img");
+        for (i = 0; i < x.length; i++) {
+          x.item(i).style.border = "none";
+        }
+        id.style.border = "5px solid orange";
+        document.getElementById("result").innerText = "";
+        document.getElementById("roundWin").innerText = "";
+      }
+
+      function userSelectRock() {
+        userOption = "Rock";
+        document.getElementById("userOption").innerText = userOption;
+        return;
+      }
+      function userSelectPaper() {
+        userOption = "Paper";
+        document.getElementById("userOption").innerText = userOption;
+        return;
+      }
+      function userSelectScrissors() {
+        userOption = "Scrissors";
+        document.getElementById("userOption").innerText = userOption;
+        return;
+      }
+      function Play() {
+        if (userOption === undefined) {
+          alert("To start chose a wappon");
+          return;
+        }
+        var compOption =
+          computerOption[Math.floor(Math.random() * computerOption.length)];
+        document.getElementById("result").innerText = compOption;
+
+        if (compOption == userOption) {
+          document.getElementById("roundWin").innerText =
+            "You have selected the same weapon! Choose again";
+          return;
+        } else if (compOption == "Rock" && userOption == "Scrissors") {
+          document.getElementById("roundWin").innerText = "Computer Win";
+          computerWins = computerWins + 1;
+          return score();
+        } else if (compOption == "Scrissors" && userOption == "Paper") {
+          document.getElementById("roundWin").innerText = "Computer Win";
+          computerWins = computerWins + 1;
+          return score();
+        } else if (compOption == "Paper" && userOption == "Rock") {
+          document.getElementById("roundWin").innerText = "Computer Win";
+          computerWins = computerWins + 1;
+          return score();
+        } else if (userOption == "Rock" && compOption == "Scrissors") {
+          document.getElementById("roundWin").innerText = "YOU Win";
+          userWins = userWins + 1;
+          return score();
+        } else if (userOption == "Scrissors" && compOption == "Paper") {
+          document.getElementById("roundWin").innerText = "YOU Win";
+          userWins = userWins + 1;
+          return score();
+        } else userOption == "Paper" && compOption == "Rock";
+        {
+          document.getElementById("roundWin").innerText = "YOU Win";
+          userWins = userWins + 1;
+          return score();
+        }
+        function score() {
+          document.getElementsByName(computerWins).innerText = computerWins;
+          document.getElementById("computerScore").innerText = computerWins;
+          document.getElementsByName(userWins).innerText = userWins;
+          document.getElementById("userScore").innerText = userWins;
+        }
+      }
+    </script>
+  </body>
+</html>

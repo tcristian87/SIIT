@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+          <div>
+              <h2>MAKE A LIST OF YOUR FAVORITE ACTORS</h2>
+          </div>
+          <div id="addC">
+        <button class="addCharacter" id="addCharacter">Add Character</button>
+      </div>
+      <div>
+        <table class="styled-table">
+          <thead >
+          <tr id = "tabel" style="display: none">
+            <th>Movie Title</th>
+            <th>Actor Name</th>
+            <th>Picture</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+          <div class="wrap">
+          <form id="crew-form" style="display: none" >
+            <div>
+            <label for="MovieTitle">Movie Title</label>
+            <input type="text" id="MovieTitle" class="cool">
+          </div>
+          <div>
+            <label for="actorName">Actor Name</label>
+            <input type="text" id="actorName"  class="cool">
+          </div>
+          <div>
+            <label for="Picture">Paste URL</label>
+            <input type="text" id="picture" class="cool">
+          </div>
+          <div>
+            <button type="button" class="add-row">Save</button>
+          </div>
+        </div>
+          </form>
+      </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="application.js"></script>
+  </body>
+</html>
