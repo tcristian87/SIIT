@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+    <div>
+    <table id ="table" >
+      <div>
+        <thead class="sheetColumn" id="thead">
+            <th>ID</th>
+            <th>Task Description</th>
+            <th>Status</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Assigned User</th>
+            <th>Remove</th>
+        </thead>
+      </div>
+      <div>
+        <thead id="thead">
+          <tr>
+          <th></th>
+          <th><input id="searchByTaskDescription" placeholder="Task Description" ></th>
+          <th><input id="searchByStatus" placeholder="Status"></th>
+            <th><input id="searchByStartDate" placeholder="Start Date"></th>
+            <th><input id="searchByDueDate" placeholder="Due Date"></th>
+            <th><input id="searchByAssignedUser" placeholder="Assigned User"></th>
+            <th><input id="filter" placeholder="Search the entire list"></th>
+          </tr>
+          </thead>
+        <tbody id="tbody">
+        </tbody>
+      </div>
+    </table>
+    </div>
+    <div id="input" class = "input">
+        <input type="text" placeholder="Task Number" name="taskName" id="taskName">
+        <input type="text" placeholder="TaskDescription" name="TaskDescription" id="TaskDescription">
+        <select name="Status" id="Status" class = "Status">
+          <option value="">Choose a status</option>
+          <option value = "To Do" position = "taskDone">To Do</option>
+          <option value = "In Progress" position = "inProgress">In Progress</option>
+          <option value = "Done" position = "Done">Done</option>
+          </select>
+        <input placeholder="StartDate" type="text" onfocus="(this.type='date')" name="StartDate" id="StartDate">
+        <input type="text" placeholder="DueDate" name="DueDate" onfocus="(this.type='date')"id="DueDate">
+        <input type="text" placeholder="AsignetUser" name="AsignetUser" id="AsignetUser">
+        <button type ="button" class = "addTask" id ="addTask">Add Task</button>
+        <button type = "button" class = "upDate" id = "upDate">Update</button><br>
+    </div>
+   
+
+</body>
+</html>
